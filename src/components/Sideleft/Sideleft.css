@@ -1,0 +1,132 @@
+.sideleft{
+
+    margin-left: 2px;
+    width: 5rem;
+    height: 100vh;
+    border: 1px solid #75E6DA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 3;
+    position: fixed;
+    padding-top: 10px;
+    /* margin-right: 1rem; */
+    margin-top:4rem;
+    /* box-shadow: 25px 0px 70px -30px #B8860B; */
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
+
+  /* .logo{ */
+    /* width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* border: 1px solid #B8860B; */
+    /* font-size: 40px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: 'Cherish', cursive;
+    padding-right: 5px;
+    transition: 0.4s;
+    text-decoration: none; */
+/* } */
+/* .logo a{
+  text-decoration: none;
+} */
+
+.logo{
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Cherish', cursive;
+  text-decoration: none;
+  font-weight: 500;
+
+}
+
+.logo:hover{
+  background-color: #B8860B;
+  color: #013220;
+  border-radius: 50px;
+}
+
+button p{
+  text-decoration: none;
+}
+
+button{
+  text-decoration: none;
+}
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .center a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 20px;
+    /* border: 1px solid #B8860B; */
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+  }
+.center a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    color: #B8860B;
+}
+
+
+
+.center a i:hover{
+
+    background-color: #B8860B;
+    color: #013220;
+}
+
+  .div{
+    display: flex;
+    justify-content: center;    
+    background-color: #CBD18F;
+    width: 1px;
+    height: 150px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  .down{
+    margin-top: 2rem;
+    width: 1px;
+    height: 200px;
+    background-color: #CBD18F;
+  }
+
+  @media only screen and (max-width:400px){
+    .sideleft{
+        /* margin-right: 1rem; */
+        /* width: 20px; */
+    }
+
+    .sideleft .logo{
+      font-family: 'Cherish', cursive;
+    }
+
+
+
+  
+  }

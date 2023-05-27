@@ -1,0 +1,195 @@
+.contact{
+    display: flex;
+    flex: 9;
+    margin:4rem 6rem;
+    
+}
+
+.box{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    /* border: 4px solid #B8860B; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.box:hover{
+    box-shadow: 0px -25px 20px -20px #CBD18F,
+25px 0px 20px -20px #CBD18F,
+0px 25px 20px -20px #CBD18F,
+-25px 0px 20px -20px #CBD18F;
+}
+.box h1{
+    position: absolute;
+    top: 0.5rem;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.input-feild{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+
+}
+
+input{
+    padding: 15px 10px;
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #B8860B;
+    margin: 10px;
+    font-weight: 900;
+    font-size: 14px;
+    width: 15rem;
+    height: 1rem;
+    /* border: 1px solid #B8860B; */
+    text-decoration: none;
+    
+}
+
+.writeformgroup{
+    margin-top: 1rem;
+    border: 1px solid #B8860B;
+    outline: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+textarea{
+    padding: 10px;
+      border: 1px solid #B8860B;
+      outline: 0;
+    }
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1rem; */
+    margin-bottom: 0;
+    width: 50px;
+    height: 50px;
+    margin-top: 1rem;
+
+   
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #B8860B;
+    outline: 0;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+
+
+
+.btn i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  80px;
+    height: 22px;
+    transition: 0.5s;
+    font-weight: 900;
+    
+}
+
+.btn i:hover{
+    background-color: #B8860B;
+    color: #013220;
+    /* border-radius: 22px; */
+}
+
+/* -------------------------------------------animation strat-------------------------------------------- */
+.circle ul li{
+    position: absolute;
+    border: 1px solid #B8860B;
+    width: 20px;
+    height: 20px;
+    list-style: none;
+    opacity: 0;
+}
+.circle li{
+    bottom: 0;
+    left: 15vw;
+    animation: circle 10s linear infinite;
+}
+.circle li:nth-child(2){
+    left: 35vw;
+    animation-delay: 2s;
+}
+
+.circle li:nth-child(3){
+    left: 55vw;
+    animation-delay: 6s;
+}
+.circle li:nth-child(4){
+    left: 75vw;
+    animation-delay: 1s;
+}
+.circle li:nth-child(5){
+    left: 90vw;
+    animation-delay: 8s;
+}
+
+@keyframes circle
+{
+    0%{
+        transform: scale(0) rotateY(0deg);
+        opacity: 1;
+        bottom: 0;
+        border-radius: 0;
+    }
+    100%{
+        transform: scale(5) rotateY(2000deg);
+        opacity: 0;
+        bottom: 90vh;
+        border-radius: 50%;
+    }
+}
+/* -------------------------------------------animation end-------------------------------------------- */
+@media only screen and (max-width:400px){
+    .box{
+        width: 280px;
+        height: 400px;
+        margin-left: 2rem;
+        padding: 1rem;
+    }
+    .box h1{
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+    .input-feild{
+        margin-top: 2rem;
+    }
+    input{
+
+        width: 13rem;
+        height: 1rem;
+    }
+
+    .writeformgroup{
+        width: 200px;
+        height: 80px;
+    }
+    textarea{
+        width: 200px;
+        height: 80px;
+    }
+}
